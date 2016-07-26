@@ -1,0 +1,2 @@
+# yonjikim
+Portfolio for Yonji
