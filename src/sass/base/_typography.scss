@@ -1,0 +1,21 @@
+// Typography
+
+@font-face{
+  font-family: "fortescue-pro";
+  src:url("../fonts/fortescue/fortescue-regular-web.eot?#iefix");
+  src:url("../fonts/fortescue/fortescue-regular-web.eot?#iefix") format("eot"),
+  url("../fonts/fortescue/fortescue-regular-web.woff") format("woff"),
+  url("../fonts/fortescue/fortescue-regular-web.woff2") format("woff2"),
+  url("../fonts/fortescue/fortescue-regular-web.ttf") format("truetype"),
+  url("../fonts/fortescue/fortescue-regular-web.svg") format("svg");
+}
+
+@font-face{
+  font-family: "fortescue-pro-bold";
+  src:url("../fonts/fortescue/fortescue-bold-web.eot?#iefix");
+  src:url("../fonts/fortescue/fortescue-bold-web.eot?#iefix") format("eot"),
+  url("../fonts/fortescue/fortescue-bold-web.woff") format("woff"),
+  url("../fonts/fortescue/fortescue-bold-web.woff2") format("woff2"),
+  url("../fonts/fortescue/fortescue-bold-web.ttf") format("truetype"),
+  url("../fonts/fortescue/fortescue-bold-web.svg") format("svg");
+}

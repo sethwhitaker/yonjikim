@@ -1,0 +1,29 @@
+{
+  "name": "yonjikim",
+  "description": "Yonji Portfolio Site.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sethwhitaker/yonjikim",
+  "author": {
+    "name": "Seth Whitaker",
+    "url": "http://github.com/sethwhitaker/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sethwhitaker/yonjikim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sethwhitaker/yonjikim/issues"
+  },
+  "keywords": [
+    "Portfolio",
+    "gulp"
+  ],
+   "devDependencies": {
+    "assemble": "^0.16.1",
+    "gulp": "^3.9.1",
+    "gulp-extname": "^0.2.2",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "handlebars-helpers": "^0.7.3"
+  }
+}
