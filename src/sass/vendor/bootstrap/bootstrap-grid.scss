@@ -21,4 +21,13 @@
 @import "mixins/grid-framework";
 @import "mixins/grid";
 
+@import "utilities/clearfix";
+@import "utilities/display";
+@import "utilities/flex";
+// @import "utilities/pulls";
+// @import "utilities/screenreaders";
+@import "utilities/spacing";
+// @import "utilities/text";
+@import "utilities/visibility";
+
 @import "grid";
