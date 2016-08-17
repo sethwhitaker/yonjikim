@@ -1,17 +1,20 @@
 <div class="research-block">
 	<img src="/img/{{header-img}}" alt="">
 	<div class="case-content">
-		<img src="/img/{{user-img}}" alt="">
-		<blockquote><p>“{{blockquote}}”</p></blockquote>
-		<cite>{{cite}}</cite>
-
-		<h3>{{heading}}</h3>
-		<p>{{content}}</p>
-		<h3>User Needs</h3>
-		<ul>
-			{{#each needs}}
-			<li>{{this}}</li>
-			{{/each}}
-		</ul>
+		<img class="float-left" src="/img/{{user-img}}" alt="">
+		<div class="research-block-content">
+			<blockquote><p class="big">“{{blockquote}}”</p></blockquote>
+			<cite class="h3">{{{cite}}}</cite>
+			<div class="research-block-sub-content">
+				<h3 class="h3">{{heading}}</h3>
+				<p>{{content}}</p>
+				<h3 class="h3">User Needs</h3>
+				<ul>
+					{{#each needs}}
+					<li>{{this}}</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>

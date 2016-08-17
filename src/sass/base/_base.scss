@@ -4,8 +4,9 @@ body,
 html {
 	width: 100%;
 	height: 100%;
-	// font-size:16px;
+	font-family:$body-font;
 	color: $black-one;
+	font-weight: 300;
 	letter-spacing: 0.4px;
 }
 
@@ -34,7 +35,6 @@ p{
 }
 
 img{
-	// width:100%;
 	max-width: 100%;
 }
 
@@ -45,6 +45,7 @@ img{
 
 .blue	{
 	background-color: $light-blue;
+	padding: 0 0 125px;
 }
 #research-phase{
 	padding-top: 250px;
@@ -60,18 +61,65 @@ img{
 	margin: -100px auto 0;
 
 }
+.research-block-content{
+	overflow: hidden;
+	padding: 0 30px;
+}
+.research-block-sub-content{
+	color:$black-one;
+	margin: 50px  100px 0 0;
+	padding-top: 50px;
+	border-top: 1px solid $grey-seven;
+	p{
+		margin-bottom: 40px;
+	}
+}
 .polygon{
 	background: transparent url(/img/polygon.svg) center center no-repeat;
 	padding:15px 0;
 }
 .case-section-header{
 	text-align: center;
-	padding:110px 0;
+	padding: 110px 0;
 }
 
 .sg-grid{
 	background-color: $grey-two;
 	text-align: center;
 	margin-bottom: 30px;
-	padding:10px 0
+	padding: 10px 0
+}
+.sub-section{
+	padding: 100px 0;
+	text-align: center;
+}
+
+.big {
+	font-family: $heading-font;
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+.case-img{
+	margin-bottom: 30px;
+}
+
+.float-left{
+	float:left;
+}
+
+.float-right{
+	float:right;
+}
+
+cite{
+	font-family: $heading-font;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-style: normal;
+}
+ul{
+	font-size: 16px;
+
 }

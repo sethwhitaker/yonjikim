@@ -14,7 +14,9 @@ body,
 html {
   width: 100%;
   height: 100%;
+  font-family: "niveau-grotesk";
   color: #1d1d1b;
+  font-weight: 300;
   letter-spacing: 0.4px;
 }
 
@@ -53,6 +55,7 @@ img {
 
 .blue {
   background-color: #e4f4fa;
+  padding: 0 0 125px;
 }
 
 #research-phase {
@@ -67,6 +70,22 @@ img {
   padding: 30px;
   max-width: 705px;
   margin: -100px auto 0;
+}
+
+.research-block-content {
+  overflow: hidden;
+  padding: 0 30px;
+}
+
+.research-block-sub-content {
+  color: #1d1d1b;
+  margin: 50px  100px 0 0;
+  padding-top: 50px;
+  border-top: 1px solid #c3c3c3;
+}
+
+.research-block-sub-content p {
+  margin-bottom: 40px;
 }
 
 .polygon {
@@ -84,6 +103,41 @@ img {
   text-align: center;
   margin-bottom: 30px;
   padding: 10px 0;
+}
+
+.sub-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.big {
+  font-family: "fortescue-pro";
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.case-img {
+  margin-bottom: 30px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+cite {
+  font-family: "fortescue-pro";
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+ul {
+  font-size: 16px;
 }
 
 .case-intro {

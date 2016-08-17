@@ -54,7 +54,7 @@ layout: default.hbs
 				"header-img" : "surgeon-image.png",
 				"user-img" : "chief-v-p-of-product-develoment-photo.png",
 				"blockquote" : "The surgeon is the impetus for the order, driving the initial strategy for the surgery and approving the final order for the spinal rod. Also at any point, he/she can cancel the case.",
-				"cite" : "USER INTERVIEW WITH CHIEF VP OF PRODUCT DEVELOPMENT",
+				"cite" : "USER INTERVIEW WITH  <br/>CHIEF VP OF PRODUCT DEVELOPMENT",
 				"heading" : "Primary User: The Surgeon",
 				"content" : "Gene is a senior spinal surgeon at White Plains Hospital, whose primary goal is patient and personal satisfaction in his surgeries. He’s interested in the cutting edge technology that Medicrea offers for his patient, but as he\'s busy, he doesn\'t have a lot of time to learn unintuitive software or manually enter repetitive data when he’s planning his surgery strategy and ordering his product.",
 				"needs" : [
@@ -71,14 +71,14 @@ layout: default.hbs
 			{{#parseJSON '{
 				"header-img" : "lab-team-photo.png",
 				"user-img" : "us-product-specialist.svg",
-				"blockquote" : "The surgeon is the impetus for the order, driving the initial strategy for the surgery and approving the final order for the spinal rod. Also at any point, he/she can cancel the case.",
-				"cite" : "USER INTERVIEW WITH CHIEF VP OF PRODUCT DEVELOPMENT",
-				"heading" : "Primary User: The Surgeon",
-				"content" : "Gene is a senior spinal surgeon at White Plains Hospital, whose primary goal is patient and personal satisfaction in his surgeries. He’s interested in the cutting edge technology that Medicrea offers for his patient, but as he\'s busy, he doesn\'t have a lot of time to learn unintuitive software or manually enter repetitive data when he’s planning his surgery strategy and ordering his product.",
+				"blockquote" : "As the surgeon is busy, the lab team essentially acts as a project manager, tracking down info and moving the case along. We also translate the surgeon\'s surgery strategy into the customised product.",
+				"cite" : "USER INTERVIEW WITH <br>US PRODUCT SPECIALIST",
+				"heading" : "Secondary User: The Lab Product Specialist",
+				"content" : "Daniela Jones is a product specialist on the Medicrea US Lab team who handles US orders. She is responsible for liaising with the surgeon and ensuring accurate and timely construction of the customised spinal rod. However most time-intensive part of her job is following up with the medical staff on filling out the required fields. Because the software is not intuitive, workarounds are necessary.",
 				"needs" : [
-					"To quickly see his most urgent tasks",
-					"To easily input initial surgery plan and pre-op photos in a new case",
-					"To give feedback and/or approve a recommendation",
+					"To quickly see her most urgent tasks",
+					"To automatically pull medical information from various touchpoints",
+					"To easily create, share, and edit surgery recommendations",
 					"To visit a single platform for all communication"
 				]
 			}'}}
@@ -87,9 +87,9 @@ layout: default.hbs
 
 
 
+			<img class="case-img" src="/img/medicrea-2@2x.png" alt="">
 		</div>
 
-		<img src="/img/medicrea-2@2x.png" alt="">
 
 	</section>
 
@@ -118,52 +118,62 @@ layout: default.hbs
 				{{/parseJSON}}
 			</div>
 		</div>
+
 		<img src="/img/group-9.png" alt="">
+
 		<div class="blue">
 
 			<div class="container">
-				<h2>Good Morning! Here are your To-Dos today</h2>
-				<p>The first page after logging in, the Dashboard shows you your most urgent tasks for the day and gives you a preview of what’s ahead. All the ways a surgeon or lab member would want to slice or dice their list of open cases, the Dashboard has a shortcut for it.</p>
+				<div class="sub-section case-content">
+					<h3 class="h3">Good Morning! Here are your To-Dos today</h3>
+					<p class="big">The Dashboard shows your most urgent tasks today and a preview of what’s ahead. All the ways a surgeon or lab member would want to slice or dice their list of open cases, the Dashboard has a shortcut for it.</p>
+				</div>
 
 				<img src="/img/dashboard-v-12.png" alt="">
 
-				<h2>FINDING ONE CASE OUT OF HUNDREDS</h2>
-				<p>The goal of Cases is for users to find the specific case memo they needed at a high level. I focus on users filtering by status or timing, sorting the results, and viewing the results either as cards or a list.</p>
-				<img src="/img/cases-v-5-b-card.png" alt="">
+				<div class="sub-section case-content">
+					<h3 class="h3">FINDING ONE CASE OUT OF HUNDREDS</h3>
+					<p class="big">The goal of Cases is for users to find the specific case memo they needed at a high level. I focus on users filtering by status or timing, sorting the results, and viewing the results either as cards or a list.</p>
+				</div>
+				<img class="case-img" src="/img/cases-v-5-b-card.png" alt="">
 
 				<div class="row">
 					<div class="col-md">
-						<img src="/img/cases-v-5-b-card-hover-card.png" alt="">
+						<img class="case-img" src="/img/cases-v-5-b-card-hover-card.png" alt="">
 					</div>
 					<div class="col-md">
-						<img src="/img/medicrea-5-b.png" alt="">
+						<img class="case-img" src="/img/medicrea-5-b.png" alt="">
 					</div>
 				</div>
 				<img src="/img/cases-v-5-b.png" alt="">
 
-				<h2>THE HARDEST WORKING PAGE</h2>
-				<p>The Case Memo needs to show the case’s current status, past activity, the next step needed, the surgeon’s brief, the lab’s proposed plan, post-operative analysis, and also allow feedback between the surgeon and lab specialist. That’s a lot! I created a flexible layout that cleanly displays all the different types of information.</p>
+				<div class="sub-section case-content">
+					<h3 class="h3">THE HARDEST WORKING PAGE</h3>
+					<p class="big">The Case Memo needs to show the case’s current status, past activity, next step needed, surgeon’s brief, lab’s proposed plan, post-operative analysis, and allow feedback between the surgeon and lab specialist.</p>
+				</div>
 
-				<img src="/img/surgeon-screen-v-5-new-case.png" alt="">
-				<img src="/img/surgeon-screen-v-5-share-plan-hover.png" alt="">
+				<img class="case-img" src="/img/surgeon-screen-v-5-new-case.png" alt="">
+				<img class="case-img" src="/img/surgeon-screen-v-5-share-plan-hover.png" alt="">
 				<img src="/img/surgeon-screen-v-5-post-op.png" alt="">
-				<h2>FORMS, FORMS, FORMS</h2>
-				<p>A large part of this platform are form fields. Most designers don’t find this sexy… but I do in a nerdy way. How can I make input fields cute and easy to use?</p>
+				<div class="sub-section case-content">
+					<h3 class="h3">FORMS, FORMS, FORMS</h3>
+					<p class="big">A large part of this platform are form fields. Most designers don’t find this sexy… but I do in a nerdy way. How can I make input fields cute and easy to use?</p>
+				</div>
 
 				<div class="row">
 					<div class="col-md-6">
-						<img src="/img/create-an-account-v-5.png" alt="">
+						<img class="case-img" src="/img/create-an-account-v-5.png" alt="">
 					</div>
 					<div class="col-md-6">
-						<img src="/img/sign-in-v-6.png" alt="">
+						<img class="case-img" src="/img/sign-in-v-6.png" alt="">
 
 					</div>
 					<div class="col-md-6">
-						<img src="/img/search-v-2-in-progress.png" alt="">
+						<img class="case-img" src="/img/search-v-2-in-progress.png" alt="">
 
 					</div>
 					<div class="col-md-6">
-						<img src="/img/add-a-new-case-v-11-uploaded-photo.png" alt="">
+						<img class="case-img" src="/img/add-a-new-case-v-11-uploaded-photo.png" alt="">
 
 					</div>
 				</div>
