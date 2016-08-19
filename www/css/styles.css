@@ -18,12 +18,14 @@ html {
   color: #1d1d1b;
   font-weight: 300;
   letter-spacing: 0.4px;
+  font-size: 18px;
 }
 
 .h1 {
   font-family: "fortescue-pro";
-  font-size: 38px;
+  font-size: 45px;
   letter-spacing: 8px;
+  font-weight: 100;
 }
 
 .h3 {
@@ -31,21 +33,329 @@ html {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: 100;
 }
 
 p {
   font-weight: 300;
 }
 
+img {
+  max-width: 100%;
+}
+
+cite {
+  font-family: "fortescue-pro";
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .lead {
   font-family: "niveau-grotesk";
-  font-weight: 500;
   line-height: 1.5;
   color: #1d1d1b;
 }
 
-img {
-  max-width: 100%;
+.big {
+  font-family: "fortescue-pro";
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.sg-grid {
+  background-color: #ececec;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+.pull-10 {
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.pull-20 {
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+.pull-30 {
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+.pull-40 {
+  margin-top: -40px;
+  padding-top: 40px;
+}
+
+.pull-50 {
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+.pull-60 {
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.pull-70 {
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
+.pull-80 {
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+.pull-90 {
+  margin-top: -90px;
+  padding-top: 90px;
+}
+
+.pull-100 {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
+.pull-110 {
+  margin-top: -110px;
+  padding-top: 110px;
+}
+
+.pull-120 {
+  margin-top: -120px;
+  padding-top: 120px;
+}
+
+.pull-130 {
+  margin-top: -130px;
+  padding-top: 130px;
+}
+
+.pull-140 {
+  margin-top: -140px;
+  padding-top: 140px;
+}
+
+.pull-150 {
+  margin-top: -150px;
+  padding-top: 150px;
+}
+
+.pull-160 {
+  margin-top: -160px;
+  padding-top: 160px;
+}
+
+.pull-170 {
+  margin-top: -170px;
+  padding-top: 170px;
+}
+
+.pull-180 {
+  margin-top: -180px;
+  padding-top: 180px;
+}
+
+.pull-190 {
+  margin-top: -190px;
+  padding-top: 190px;
+}
+
+.pull-200 {
+  margin-top: -200px;
+  padding-top: 200px;
+}
+
+.push-10 {
+  margin-top: 10px;
+}
+
+.push-20 {
+  margin-top: 20px;
+}
+
+.push-30 {
+  margin-top: 30px;
+}
+
+.push-40 {
+  margin-top: 40px;
+}
+
+.push-50 {
+  margin-top: 50px;
+}
+
+.push-60 {
+  margin-top: 60px;
+}
+
+.push-70 {
+  margin-top: 70px;
+}
+
+.push-80 {
+  margin-top: 80px;
+}
+
+.push-90 {
+  margin-top: 90px;
+}
+
+.push-100 {
+  margin-top: 100px;
+}
+
+.push-110 {
+  margin-top: 110px;
+}
+
+.push-120 {
+  margin-top: 120px;
+}
+
+.push-130 {
+  margin-top: 130px;
+}
+
+.push-140 {
+  margin-top: 140px;
+}
+
+.push-150 {
+  margin-top: 150px;
+}
+
+.push-160 {
+  margin-top: 160px;
+}
+
+.push-170 {
+  margin-top: 170px;
+}
+
+.push-180 {
+  margin-top: 180px;
+}
+
+.push-190 {
+  margin-top: 190px;
+}
+
+.push-200 {
+  margin-top: 200px;
+}
+
+.shove-10 {
+  margin-bottom: 10px;
+}
+
+.shove-20 {
+  margin-bottom: 20px;
+}
+
+.shove-30 {
+  margin-bottom: 30px;
+}
+
+.shove-40 {
+  margin-bottom: 40px;
+}
+
+.shove-50 {
+  margin-bottom: 50px;
+}
+
+.shove-60 {
+  margin-bottom: 60px;
+}
+
+.shove-70 {
+  margin-bottom: 70px;
+}
+
+.shove-80 {
+  margin-bottom: 80px;
+}
+
+.shove-90 {
+  margin-bottom: 90px;
+}
+
+.shove-100 {
+  margin-bottom: 100px;
+}
+
+.shove-110 {
+  margin-bottom: 110px;
+}
+
+.shove-120 {
+  margin-bottom: 120px;
+}
+
+.shove-130 {
+  margin-bottom: 130px;
+}
+
+.shove-140 {
+  margin-bottom: 140px;
+}
+
+.shove-150 {
+  margin-bottom: 150px;
+}
+
+.shove-160 {
+  margin-bottom: 160px;
+}
+
+.shove-170 {
+  margin-bottom: 170px;
+}
+
+.shove-180 {
+  margin-bottom: 180px;
+}
+
+.shove-190 {
+  margin-bottom: 190px;
+}
+
+.shove-200 {
+  margin-bottom: 200px;
+}
+
+/* Case Study General */
+.blue {
+  background-color: #e4f4fa;
+}
+
+.polygon {
+  background: transparent url(/img/polygon.svg) center center no-repeat;
+  padding: 20px 0;
+}
+
+.case-intro {
+  padding-top: 215px;
+  text-align: center;
 }
 
 .case-content {
@@ -53,16 +363,49 @@ img {
   margin: 0 auto;
 }
 
-.blue {
-  background-color: #e4f4fa;
-  padding: 0 0 125px;
+.case-section-header {
+  text-align: center;
+  padding: 110px 0;
 }
 
-#research-phase {
-  padding-top: 250px;
-  margin-top: -250px;
+.case-section-header h2 {
+  margin-bottom: 15px;
 }
 
+.case-section-header h3 {
+  margin-bottom: 15px;
+}
+
+.case-img {
+  margin-bottom: 30px;
+}
+
+.sub-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.next-project a {
+  display: block;
+  text-align: center;
+  padding: 140px 0;
+  font-family: "fortescue-pro";
+  font-size: 14px;
+  letter-spacing: 15px;
+  color: #1d1d1b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.next-project a:hover {
+  color: white;
+}
+
+.medicrea .next-project {
+  background-color: #0594c2;
+}
+
+/* Research Block */
 .research-block .case-content {
   background-color: #e4f4fa;
   position: relative;
@@ -88,59 +431,34 @@ img {
   margin-bottom: 40px;
 }
 
-.polygon {
-  background: transparent url(/img/polygon.svg) center center no-repeat;
-  padding: 15px 0;
+/* Design */
+.color-palette {
+  border-left: 1px solid #ececec;
 }
 
-.case-section-header {
+.palette {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
   text-align: center;
-  padding: 110px 0;
+  margin: 0 auto;
 }
 
-.sg-grid {
-  background-color: #ececec;
+.palette-label {
+  color: #c3c3c3;
   text-align: center;
-  margin-bottom: 30px;
-  padding: 10px 0;
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
 
-.sub-section {
-  padding: 100px 0;
-  text-align: center;
-}
-
-.big {
-  font-family: "fortescue-pro";
-  font-size: 30px;
-  line-height: 1.5;
-}
-
-.case-img {
+/* Medicrea */
+.medicrea-branding h3 {
   margin-bottom: 30px;
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-cite {
+.medicrea-embodies li {
   font-family: "fortescue-pro";
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-style: normal;
-}
-
-ul {
-  font-size: 16px;
-}
-
-.case-intro {
-  padding-top: 215px;
-  text-align: center;
+  color: #cacaca;
+  font-size: 20px;
 }

@@ -8,12 +8,14 @@ html {
 	color: $black-one;
 	font-weight: 300;
 	letter-spacing: 0.4px;
+	font-size: 18px;
 }
 
 .h1{
 	font-family: $heading-font;
-	font-size: 38px;
+	font-size: 45px;
 	letter-spacing: 8px;
+	font-weight: 100;
 }
 .h2{
 
@@ -23,93 +25,15 @@ html {
 	font-size: 12px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	font-weight: 100;
 }
 p{
 	font-weight: 300;
 }
-.lead{
-	font-family: $body-font;
-	font-weight: 500;
-	line-height: 1.5;
-	color: $black-one;
-}
+
 
 img{
 	max-width: 100%;
-}
-
-.case-content{
-	max-width: 700px;
-	margin: 0 auto;
-}
-
-.blue	{
-	background-color: $light-blue;
-	padding: 0 0 125px;
-}
-#research-phase{
-	padding-top: 250px;
-	margin-top:-250px;
-}
-
-.research-block .case-content{
-	background-color: $light-blue;
-	position: relative;
-	z-index: 1;
-	padding:30px;
-	max-width: 705px;
-	margin: -100px auto 0;
-
-}
-.research-block-content{
-	overflow: hidden;
-	padding: 0 30px;
-}
-.research-block-sub-content{
-	color:$black-one;
-	margin: 50px  100px 0 0;
-	padding-top: 50px;
-	border-top: 1px solid $grey-seven;
-	p{
-		margin-bottom: 40px;
-	}
-}
-.polygon{
-	background: transparent url(/img/polygon.svg) center center no-repeat;
-	padding:15px 0;
-}
-.case-section-header{
-	text-align: center;
-	padding: 110px 0;
-}
-
-.sg-grid{
-	background-color: $grey-two;
-	text-align: center;
-	margin-bottom: 30px;
-	padding: 10px 0
-}
-.sub-section{
-	padding: 100px 0;
-	text-align: center;
-}
-
-.big {
-	font-family: $heading-font;
-	font-size: 30px;
-	line-height: 1.5;
-}
-
-.case-img{
-	margin-bottom: 30px;
-}
-
-.float-left{
-	float:left;
-}
-
-.float-right{
-	float:right;
 }
 
 cite{
@@ -120,6 +44,57 @@ cite{
 	font-style: normal;
 }
 ul{
-	font-size: 16px;
+	// font-size: 16px;
 
+}
+
+.float-left{
+	float:left;
+}
+
+.float-right{
+	float:right;
+}
+.text-center{
+	text-align:center;
+}
+.lead{
+	font-family: $body-font;
+	// font-weight: 500;
+	line-height: 1.5;
+	color: $black-one;
+}
+
+.big {
+	font-family: $heading-font;
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+
+.sg-grid{
+	background-color: $grey-two;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 10px 0
+}
+
+@for $i from 1 through 20 {
+   .pull-#{$i*10} {
+    	margin-top: -10px * $i;
+    	padding-top: 10px * $i;
+	}
+}
+
+
+@for $i from 1 through 20 {
+   .push-#{$i*10} {
+    	margin-top: 10px * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+   .shove-#{$i*10} {
+    	margin-bottom: 10px * $i;
+	}
 }
