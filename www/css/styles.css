@@ -83,6 +83,10 @@ cite {
   padding: 10px 0;
 }
 
+.grey-seven {
+  color: #c3c3c3;
+}
+
 .pull-10 {
   margin-top: -10px;
   padding-top: 10px;
@@ -669,8 +673,17 @@ cite {
 }
 
 .polygon {
-  background: transparent url(/img/polygon.svg) center center no-repeat;
   padding: 20px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.medicrea .polygon {
+  background-image: url("/img/medicrea/polygon.png");
+}
+
+.onego .polygon {
+  background-image: url("/img/onego/polygon.png");
 }
 
 .case-intro {
@@ -729,6 +742,10 @@ cite {
   background-color: #0594c2;
 }
 
+.onego .next-project {
+  background-color: #ffc529;
+}
+
 /* Research Block */
 .research-block .case-content {
   background-color: #e4f4fa;
@@ -782,6 +799,22 @@ cite {
 }
 
 /* Medicrea */
-.medicrea-branding h3 {
+.medicrea .medicrea-branding h3 {
   margin-bottom: 30px;
+}
+
+/* ONEGO */
+.onego .profile-img img {
+  margin: 0 20px;
+}
+
+.onego .new-nav-item {
+  background-color: #ffc529;
+  display: block;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  white-space: nowrap;
 }
