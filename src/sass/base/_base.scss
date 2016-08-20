@@ -7,7 +7,7 @@ html {
 	font-family:$body-font;
 	color: $black-one;
 	font-weight: 300;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.5px;
 	font-size: 18px;
 }
 
@@ -84,17 +84,30 @@ ul{
     	margin-top: -10px * $i;
     	padding-top: 10px * $i;
 	}
-}
 
-
-@for $i from 1 through 20 {
    .push-#{$i*10} {
     	margin-top: 10px * $i;
 	}
-}
 
-@for $i from 1 through 20 {
+
    .shove-#{$i*10} {
     	margin-bottom: 10px * $i;
+	}
+
+
+   .pad-b-#{$i*10} {
+    	padding-bottom: 10px * $i;
+	}
+
+	.pad-t-#{$i*10} {
+    	padding-top: 10px * $i;
+	}
+
+	.pad-l-#{$i*10} {
+    	padding-left: 10px * $i;
+	}
+
+	.pad-r-#{$i*10} {
+    	padding-right: 10px * $i;
 	}
 }
