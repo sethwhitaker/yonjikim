@@ -679,11 +679,11 @@ cite {
 }
 
 .medicrea .polygon {
-  background-image: url("/img/medicrea/polygon.svg");
+  background-image: url("/img/medicrea/polygon.png");
 }
 
 .onego .polygon {
-  background-image: url("/img/onego/polygon.svg");
+  background-image: url("/img/onego/polygon.png");
 }
 
 .case-intro {
@@ -753,7 +753,7 @@ cite {
   z-index: 1;
   padding: 55px 25px 150px 55px;
   max-width: 705px;
-  margin: -190px auto 0;
+  margin: -240px auto 0;
 }
 
 .research-block-content {
