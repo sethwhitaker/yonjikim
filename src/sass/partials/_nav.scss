@@ -4,7 +4,7 @@
 	position: absolute;
 	top:0;
 	left:0;
-	z-index: 1;
+	z-index: 2;
 	a{
 		font-family: $heading-font;
 		font-size: 14px;
@@ -13,7 +13,8 @@
 		letter-spacing: 15px;
 		position: fixed;
 		transition: color 0.3s ease;
-		&:hover{
+		&:hover,
+		&:active{
 			text-decoration: none;
 			color: $grey-seven;
 		}
@@ -33,11 +34,44 @@
 	right:0;
 	transform: rotate(90deg);
 }
-.nav-close{
+.nav-multi-button{
 	position: fixed;
-	bottom:150px;
+	top:85%;
 	right:30px;
 	z-index: 200;
+	width:47px;
+	height:32px;
+	display: block;
+	transition: all 0.25s ease-out 0.65s;
+	.line{
+		-webkit-transition: background-color 0.25s ease-out, left 0.25s ease-out 0.65s;
+		-moz-transition: background-color 0.25s ease-out, left 0.25s ease-out 0.65s;
+		-o-transition: background-color 0.25s ease-out, left 0.25s ease-out 0.65s;
+		transition: background-color 0.25s ease-out, left 0.25s ease-out 0.65s;
+		background-color: $grey-seven;
+		display: block;
+		width:2px;
+		height:32px;
+		position: absolute;
+		top:0;
+		&.line1{
+			transform: rotate(45deg);
+			left:25%;
+		}
+		&.line2{
+			transform: rotate(-45deg);
+			left:75%;
+		}
+	}
+	&.active {
+		top:10%;
+		.line{
+			background-color: white;
+			&.line2{
+				left:25%;
+			}
+		}
+	}
 }
 .navigation-overlay{
 	background-color: #ddd;
@@ -49,5 +83,24 @@
 	z-index: 1;
 	&.show{
 		visibility: visible;
+	}
+	.section{
+		text-align: center;
+		h1{
+			font-size: 120px;
+			text-transform: uppercase;
+			a{
+				color:white;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		&.medicrea{
+			background-color: $medicrea-color-alt;
+		}
+		&.onego{
+			background-color: $onego-color;
+		}
 	}
 }
