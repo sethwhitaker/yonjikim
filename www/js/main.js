@@ -30,7 +30,7 @@
 			this.$navMulti.toggleClass('active');
 			this.$navOverlay.toggleClass('show');
 			setTimeout(function(){
-			$.fn.fullpage.destroy('all');
+				$.fn.fullpage.destroy('all');
 			},800);
 		},
 		scrollToTop: function(e){
@@ -57,6 +57,7 @@
 
 	$(document).ready(function(){
 		navigation.init();
+		new WOW().init();
 	});
 
 
