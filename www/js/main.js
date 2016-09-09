@@ -14,13 +14,13 @@
 		},
 		openNav: function(e){
 			e.preventDefault();
+			this.$navFull.fullpage(['sections']);
 			this.$nav.toggleClass('active');
 			this.$navMulti.toggleClass('active');
 			this.$navOverlay.toggleClass('show');
 			this.$navWork.off('click', this.openNav);
 			this.$navMulti.off('click', this.scrollToTop);
 			this.$navMulti.on('click',	$.proxy(this.closeNav, this));
-			this.createFullpage();
 		},
 		closeNav: function(e){
 			e.preventDefault();
@@ -29,13 +29,9 @@
 			this.$nav.toggleClass('active');
 			this.$navMulti.toggleClass('active');
 			this.$navOverlay.toggleClass('show');
-			this.destroyFullpage();
-		},
-		createFullpage: function(){
-			this.$navFull.fullpage(['sections']);
-		},
-		destroyFullpage: function(){
+			setTimeout(function(){
 			$.fn.fullpage.destroy('all');
+			},800);
 		},
 		scrollToTop: function(e){
 			e.preventDefault;

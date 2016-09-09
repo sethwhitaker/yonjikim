@@ -684,24 +684,36 @@ cite {
   transition: color 0.3s ease;
 }
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover, .navigation a:active, .navigation a:focus {
   text-decoration: none;
   color: #c3c3c3;
 }
 
-.nav-home,
-.nav-work {
+.navigation .nav-home,
+.navigation .nav-work {
   top: 300px;
 }
 
-.nav-home {
+.navigation .nav-home {
   left: 0;
   transform: rotate(-90deg);
 }
 
-.nav-work {
+.navigation .nav-work {
   right: 0;
   transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+.navigation.active .nav-work {
+  transform: rotate(0deg) translateX(50%);
+  top: 80px;
+  right: 50%;
+  color: white;
+}
+
+.navigation.active .nav-home {
+  display: none;
 }
 
 .nav-multi-button {
@@ -756,12 +768,13 @@ cite {
   top: 0;
   width: 100%;
   height: 100%;
-  visibility: hidden;
+  opacity: 0;
   z-index: 1;
+  transition: all 0.5s ease;
 }
 
 .navigation-overlay.show {
-  visibility: visible;
+  opacity: 1;
 }
 
 .navigation-overlay .section {
