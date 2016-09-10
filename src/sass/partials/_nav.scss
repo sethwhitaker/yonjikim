@@ -11,7 +11,6 @@
 		text-transform: uppercase;
 		color:black;
 		letter-spacing: 15px;
-		position: fixed;
 		transition: color 0.3s ease;
 		&:hover,
 		&:active,
@@ -19,6 +18,12 @@
 			text-decoration: none;
 			color: $grey-seven;
 		}
+		display: inline-block;
+	}
+	span{
+		position: fixed;
+		display: inline-block;
+		transition: all 0.3s ease;
 	}
 
 	.nav-home,
@@ -27,20 +32,26 @@
 	}
 	.nav-home{
 		left:0;
-		transform: rotate(-90deg);
+		a{
+			transform: rotate(-90deg);
+		}
 	}
 
 	.nav-work{
 		right:0;
-		transform: rotate(90deg);
-		transition: all 0.3s ease;
+		a{
+			transform: rotate(90deg);
+			transition: all 0.3s ease;
+		}
 	}
 	&.active{
 		.nav-work{
-			transform: rotate(0deg) translateX(50%);
+			a{
+				transform: rotate(0deg) translateX(50%);
+				color:white;
+			}
 			top:80px;
 			right:50%;
-			color:white;
 		}
 		.nav-home{
 			display: none;
