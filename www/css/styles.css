@@ -822,6 +822,10 @@ cite {
   background-color: #ffc529;
 }
 
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #fff;
+}
+
 /* Case Study General */
 .blue {
   background-color: #e4f4fa;

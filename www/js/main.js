@@ -14,7 +14,20 @@
 		},
 		openNav: function(e){
 			e.preventDefault();
-			this.$navFull.fullpage(['sections']);
+			this.$navFull.fullpage({
+				//Navigation
+				navigation: true,
+				navigationPosition: 'right',
+
+				//Scrolling
+				css3: true,
+				scrollingSpeed: 1200,
+				easingcss3: 'cubic-bezier(.86,0,.07,1)',
+
+				//Design
+				controlArrows: true,
+				sectionsColor : ['#143658', '#ffc529']
+		   });
 			this.$nav.toggleClass('active');
 			this.$navMulti.toggleClass('active');
 			this.$navOverlay.toggleClass('show');
