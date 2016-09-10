@@ -43,7 +43,7 @@
 					var timeout = (index==1 && _this.isOpen==false)? 700: 0;
 
 					setTimeout(function(){
-						$section.find('h1 a').removeClass('fadeOut fadeOutUp fadeOutDown').addClass('fadeInDown');
+						$section.find('h1 a').removeClass('fadeOut fadeOutUp fadeOutDown').addClass('fadeInDownSmall');
 						$section.find('.nav-img img').removeClass('fadeOut fadeOutUp fadeOutDown').addClass('fadeIn');
 					}, timeout);
 
@@ -53,12 +53,12 @@
 	            var $section = $(this);
 
 	            if(direction =='down'){
-	            	$section.find('h1 a').removeClass('fadeInDown').addClass('fadeOutUp');
-						$section.find('.nav-img img').removeClass('fadeIn').addClass('fadeOut');
+	            	$section.find('h1 a').removeClass('fadeInDownSmall').addClass('fadeOutUp');
+						$section.find('.nav-img img').removeClass('fadeIn').addClass('fadeOutUp');
 	            }
 	            else if(direction == 'up'){
-	            	$section.find('h1 a').removeClass('fadeInDown').addClass('fadeOutDown');
-						$section.find('.nav-img img').removeClass('fadeIn').addClass('fadeOut');
+	            	$section.find('h1 a').removeClass('fadeInDownSmall').addClass('fadeOutDown');
+						$section.find('.nav-img img').removeClass('fadeIn').addClass('fadeOutDown');
 	            }
 	         }
 		   });
@@ -70,8 +70,8 @@
 			this.$nav.toggleClass('active');
 			this.$navMulti.toggleClass('active');
 			this.$navOverlay.toggleClass('show');
-			this.$navOverlay.find('h1 a').removeClass('fadeOut fadeOutUp fadeOutDown fadeIn fadeInUp fadeInDown');
-			this.$navOverlay.find('.nav-img img').removeClass('fadeOut fadeOutUp fadeOutDown fadeIn fadeInUp fadeInDown');
+			this.$navOverlay.find('h1 a').removeClass('fadeOut fadeOutUp fadeOutDown fadeIn fadeInUp fadeInDownSmall');
+			this.$navOverlay.find('.nav-img img').removeClass('fadeOut fadeOutUp fadeOutDown fadeIn fadeInUp fadeInDownSmall');
 			setTimeout(function(){
 				$.fn.fullpage.destroy('all');
 			},800);
