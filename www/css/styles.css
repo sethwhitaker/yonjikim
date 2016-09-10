@@ -724,7 +724,7 @@ cite {
   width: 47px;
   height: 32px;
   display: block;
-  transition: all 0.25s ease-out 0.65s;
+  transition: all 0.75s cubic-bezier(0.86, 0, 0.07, 1) 0.3s;
 }
 
 .nav-multi-button .line {
@@ -768,12 +768,14 @@ cite {
   top: 0;
   width: 100%;
   height: 100%;
+  visibility: hidden;
   opacity: 0;
   z-index: 1;
   transition: all 0.5s ease;
 }
 
 .navigation-overlay.show {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -788,22 +790,33 @@ cite {
 }
 
 .navigation-overlay .section h1 a {
+  display: inline-block;
   position: relative;
   color: white;
-  padding: 90px 0;
-  z-index: 0;
+  padding: 115px 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .navigation-overlay .section h1 a:hover {
   text-decoration: none;
 }
 
-.navigation-overlay .section h1 a img {
+.navigation-overlay .section .nav-img {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.navigation-overlay .section .nav-img img {
+  opacity: 0;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
 }
 
 .navigation-overlay .section:nth-child(odd) {
