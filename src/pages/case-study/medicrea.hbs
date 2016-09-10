@@ -13,7 +13,7 @@ bodyClass: "medicrea"
 			<div class="row flex-items-sm-around">
 				<div class="col-md-14 col-xl-8">
 					<div class="case-intro">
-						<h1 class="h1">MEDICREA</h1>
+						<h1 class="h1 ">MEDICREA</h1>
 						<p class="shove-80">Medicrea is a ground breaking medical company that specialises in customsed spinal surgery. They sell spinal rods customised to each patient that needs spinal surgery. I was brought on because they want to create a single full-service platform that helps surgeons plan their surgeries, order products, and conduct post-operative analysis.</p>
 
 						<div class="row flex-items-sm-around">
@@ -89,7 +89,7 @@ bodyClass: "medicrea"
 
 
 
-			<img src="{{imgpath}}/userflow.jpg" alt="">
+			<img class="wow animated fadeIn" src="{{imgpath}}/userflow.jpg" alt="">
 		</div>
 
 
@@ -109,40 +109,27 @@ bodyClass: "medicrea"
 			<div class="medicrea-branding">
 				<div class="row flex-items-md-center">
 					<div class="col-md-7">
-						<h3 class="h3">MEDICREA EMBODIES</h3>
-						<img src="{{imgpath}}/medicrea-embodies.jpg" class="shove-80" alt="">
-						{{!-- <ol class="medicrea-embodies">
-							<li>
-								<div style="font-size:60px;">
-								   <span style="color:#cacaca;">&mdash;</span>
-									<span style="color:#143658;">Medical Expertise</span>
-								</div>
-							</li>
-							<li>
-								<div style="font-size:60px;">
-									<span style="color:#cacaca;">&mdash;</span>
-									<span style="color:#143658;">Intuitivity</span>
-								</div>
-							</li>
-						</ol> --}}
-						<h3 class="h3">FRIENDLY TYPEFACE</h3>
-						<img src="{{imgpath}}/group-17.png" class="shove-80" alt="">
-						<h3 class="h3">ICONOGRAPHY</h3>
-						<img src="{{imgpath}}/icons.png" class="" alt="">
+						<h3 class="h3 wow animated fadeIn">MEDICREA EMBODIES</h3>
+						<img src="{{imgpath}}/medicrea-embodies.jpg" class="shove-80 wow animated fadeInLeftSmall" alt="">
+						<h3 class="h3 wow animated fadeIn">FRIENDLY TYPEFACE</h3>
+						<img src="{{imgpath}}/group-17.png" class="shove-80 wow animated fadeInLeftSmall" alt="">
+
+						<h3 class="h3 wow animated fadeIn">ICONOGRAPHY</h3>
+						<img src="{{imgpath}}/icons.png" class="wow animated fadeInLeftSmall" alt="">
 					</div>
 					<div class="col-md-4 color-palette">
-						<h3 class="h3 text-center">APPROACHABLE PALETTE</h3>
+						<h3 class="h3 text-center wow animated fadeIn">APPROACHABLE PALETTE</h3>
 						<div class="push-60">
-							<span class="palette" style="background-color:#0594c2;"></span>
-							<p class="palette-label">Patient Blue</p>
-							<span class="palette" style="background-color:#e4f4fa;"></span>
-							<p class="palette-label">Ice Blue</p>
-							<span class="palette" style="background-color:#4bbccb;"></span>
-							<p class="palette-label">Surgeon Teal</p>
-							<span class="palette" style="background-color:#143658;"></span>
-							<p class="palette-label">Evening Blue</p>
-							<span class="palette" style="background-color:#e10f21;"></span>
-							<p class="palette-label">Medicrea Red</p>
+							<span class="wow animated fadeInRight palette" style="background-color:#0594c2;"></span>
+							<p class="wow animated fadeInRightSmall palette-label">Patient Blue</p>
+							<span class="wow animated fadeInRight palette" style="background-color:#e4f4fa;"></span>
+							<p class="wow animated fadeInRightSmall palette-label">Ice Blue</p>
+							<span class="wow animated fadeInRight palette" style="background-color:#4bbccb;"></span>
+							<p class="wow animated fadeInRightSmall palette-label">Surgeon Teal</p>
+							<span class="wow animated fadeInRight palette" style="background-color:#143658;"></span>
+							<p class="wow animated fadeInRightSmall palette-label">Evening Blue</p>
+							<span class="wow animated fadeInRight palette" style="background-color:#e10f21;"></span>
+							<p class="wow animated fadeInRightSmall palette-label">Medicrea Red</p>
 						</div>
 					</div>
 				</div>
@@ -161,61 +148,70 @@ bodyClass: "medicrea"
 					{{>case-section-header}}
 				{{/parseJSON}}
 			</div>
-			<img src="{{imgpath}}/group-9.png" alt="">
+			<img class="wow animated fadeInUp" src="{{imgpath}}/group-9.png" alt="">
 		</div>
 
 
 		<div class="pull-140 pad-b-130 blue">
 
 			<div class="container">
-				<div class="sub-section case-content">
-					<h3 class="h3">Good Morning! Here are your To-Dos today</h3>
-					<p class="big">The Dashboard shows your most urgent tasks today and a preview of what’s ahead. All the ways a surgeon or lab member would want to slice or dice their list of open cases, the Dashboard has a shortcut for it.</p>
-				</div>
 
-				<img src="{{imgpath}}/dashboard-v-12.jpg" alt="">
+				{{#parseJSON '{
+					"title": "Good Morning! Here are your To-Dos today",
+					"content" : "The Dashboard shows your most urgent tasks today and a preview of what’s ahead. All the ways a surgeon or lab member would want to slice or dice their list of open cases, the Dashboard has a shortcut for it."
+				}'}}
+					{{>sub-section-header}}
+				{{/parseJSON}}
 
-				<div class="sub-section case-content">
-					<h3 class="h3">FINDING ONE CASE OUT OF HUNDREDS</h3>
-					<p class="big">The goal of Cases is for users to find the specific case memo they needed. I focus on users filtering by status or timing, sorting the results, and viewing the results either as cards or a list.</p>
-				</div>
-				<img class="case-img" src="{{imgpath}}/cases-v-5-b-card.jpg" alt="">
+				<img class="wow aninmated fadeInUpSmall" src="{{imgpath}}/dashboard-v-12.jpg" alt="">
+
+				{{#parseJSON '{
+					"title": "FINDING ONE CASE OUT OF HUNDREDS",
+					"content" : "The goal of Cases is for users to find the specific case memo they needed. I focus on users filtering by status or timing, sorting the results, and viewing the results either as cards or a list."
+				}'}}
+					{{>sub-section-header}}
+				{{/parseJSON}}
+
+				<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/cases-v-5-b-card.jpg" alt="">
 
 				<div class="row">
 					<div class="col-md">
-						<img class="case-img" src="{{imgpath}}/cases-v-5-b-card-hover-card.jpg" alt="">
+						<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/cases-v-5-b-card-hover-card.jpg" alt="">
 					</div>
 					<div class="col-md">
-						<img class="case-img" src="{{imgpath}}/medicrea-5-b.jpg" alt="">
+						<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/medicrea-5-b.jpg" alt="">
 					</div>
 				</div>
 				<img src="{{imgpath}}/cases-v-5-b.jpg" alt="">
 
-
-				<div class="sub-section case-content">
-					<h3 class="h3">FORMS, FORMS, FORMS</h3>
-					<p class="big">A large part of this platform are form fields. Most designers don’t find this sexy… but I do in a nerdy way. How can I make input fields cute and easy<br> to use?</p>
-				</div>
+				{{#parseJSON '{
+					"title": "FORMS, FORMS, FORMS",
+					"content" : "A large part of this platform are form fields. Most designers don’t find this sexy… but I do in a nerdy way. How can I make input fields cute and easy<br> to use?"
+				}'}}
+					{{>sub-section-header}}
+				{{/parseJSON}}
 
 				<div class="row">
 					<div class="col-md-6">
-						<img class="case-img" src="{{imgpath}}/create-an-account-v-5.jpg" alt="">
-						<img class="case-img" src="{{imgpath}}/search-v-2-in-progress.jpg" alt="">
+						<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/create-an-account-v-5.jpg" alt="">
+						<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/search-v-2-in-progress.jpg" alt="">
 					</div>
 					<div class="col-md-6">
-						<img class="case-img" src="{{imgpath}}/sign-in-v-6.jpg" alt="">
-						<img class="case-img" src="{{imgpath}}/add-a-new-case-v-11-uploaded-photo.jpg" alt="">
+						<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/sign-in-v-6.jpg" alt="">
+						<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/add-a-new-case-v-11-uploaded-photo.jpg" alt="">
 					</div>
 				</div>
 
-				<div class="sub-section case-content">
-					<h3 class="h3">THE HARDEST WORKING PAGE</h3>
-					<p class="big">The Case Memo needs to show the case’s current status, past activity, next step, surgeon’s brief, lab’s proposed plan, post-operative analysis, and allow feedback between the surgeon &amp; lab specialist.</p>
-				</div>
+				{{#parseJSON '{
+					"title": "THE HARDEST WORKING PAGE",
+					"content" : "The Case Memo needs to show the case’s current status, past activity, next step, surgeon’s brief, lab’s proposed plan, post-operative analysis, and allow feedback between the surgeon &amp; lab specialist."
+				}'}}
+					{{>sub-section-header}}
+				{{/parseJSON}}
 
-				<img class="case-img" src="{{imgpath}}/surgeon-screen-v-5-new-case.jpg" alt="">
-				<img class="case-img" src="{{imgpath}}/surgeon-screen-v-5-share-plan-hover.jpg" alt="">
-				<img src="{{imgpath}}/surgeon-screen-v-5-post-op.jpg" alt="">
+				<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/surgeon-screen-v-5-new-case.jpg" alt="">
+				<img class="case-img wow animated fadeInUpSmall" src="{{imgpath}}/surgeon-screen-v-5-share-plan-hover.jpg" alt="">
+				<img class="wow animated fadeInUpSmall" src="{{imgpath}}/surgeon-screen-v-5-post-op.jpg" alt="">
 			</div>
 		</div>
 	</section>
@@ -234,7 +230,7 @@ bodyClass: "medicrea"
 		</div>
 	</section>
 
-	<section class="next-project">
+	<section class="next-project wow animated fadeIn">
 		<a href="/case-study/onego.html">&mdash;Next Project&mdash;</a>
 	</section>
 </main>

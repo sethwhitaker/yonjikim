@@ -5,9 +5,9 @@ imgpath: "/img/onego"
 bodyClass: "onego"
 ---
 
-<main class="onego">
+<main>
 
-	<section>
+	<section class="animated fadeInUpSmall">
 
 		<div class="container">
 			<div class="row flex-items-sm-around">
@@ -32,19 +32,21 @@ bodyClass: "onego"
 
 			<img class="push-100 shove-60" src="{{imgpath}}/onego-7.png" alt="">
 
+			{{#parseJSON '{
+					"title": "CEOS, CONSULTANTS AND BUSINESS DEVELOPMENT MANAGERS",
+					"content" : "OneGo’s users are highly educated, time-strapped professionals who need to quickly know whether subscription-based flying is for them. I\'ve helped them make that decision in a couple of ways."
+				}'}}
+					{{>sub-section-header}}
+			{{/parseJSON}}
 
-			<div class="sub-section case-content">
-				<h3 class="h3">CEOS, CONSULTANTS AND BUSINESS DEVELOPMENT MANAGERS</h3>
-				<p class="big">OneGo’s users are highly educated, time-strapped professionals who need to quickly know whether subscription-based flying is for them. I've helped them make that decision in a couple of ways.</p>
-			</div>
 			<div class="row flex-items-sm-around">
 				<div class="profile-img col-md-12 col-xl-10">
-					<img src="{{imgpath}}/profile-1.png" alt="">
-					<img src="{{imgpath}}/profile-2.png" alt="">
-					<img src="{{imgpath}}/profile-3.png" alt="">
-					<img src="{{imgpath}}/profile-4.png" alt="">
-					<img src="{{imgpath}}/profile-5.png" alt="">
-					<img src="{{imgpath}}/profile-6.png" alt="">
+					<img class="wow animated fadeInUp" data-wow-delay="0s" src="{{imgpath}}/profile-1.png" alt="">
+					<img class="wow animated fadeInUp" data-wow-delay="0.1s" src="{{imgpath}}/profile-2.png" alt="">
+					<img class="wow animated fadeInUp" data-wow-delay="0.2s" src="{{imgpath}}/profile-3.png" alt="">
+					<img class="wow animated fadeInUp" data-wow-delay="0.3s" src="{{imgpath}}/profile-4.png" alt="">
+					<img class="wow animated fadeInUp" data-wow-delay="0.4s" src="{{imgpath}}/profile-5.png" alt="">
+					<img class="wow animated fadeInUp" data-wow-delay="0.5s" src="{{imgpath}}/profile-6.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -62,41 +64,46 @@ bodyClass: "onego"
 				{{/parseJSON}}
 			</div>
 
-			<h3 class="h3 text-center shove-30 grey-seven">OLD NAVIGATION</h3>
-			<p class="text-center shove-110"><img src="{{imgpath}}/old-primary-nav.png" alt=""></p>
-			<h3 class="h3 text-center shove-30 grey-seven">NEW NAVIGATION</h3>
+			<h3 class="h3 text-center shove-30 grey-seven wow animated fadeInUp">OLD NAVIGATION</h3>
+			<p class="text-center shove-110 wow animated fadeInUp"><img src="{{imgpath}}/old-primary-nav.png" alt=""></p>
+			<h3 class="h3 text-center shove-30 grey-seven wow animated fadeInUp">NEW NAVIGATION</h3>
 
 			<div class="row flex-items-sm-around">
 				<div class="col-xs-12 col-sm-4 col-lg">
-					<span class="new-nav-item">Home</span>
+					<span class="new-nav-item wow animated fadeInUp" data-wow-delay="0.1s">Home</span>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-lg">
-					<span class="new-nav-item">Where we fly</span>
+					<span class="new-nav-item wow animated fadeInUp" data-wow-delay="0.2s">Where we fly</span>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-lg">
-					<span class="new-nav-item">FAQ</span>
+					<span class="new-nav-item wow animated fadeInUp" data-wow-delay="0.3s">FAQ</span>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-lg">
-					<span class="new-nav-item">Contact Us</span>
+					<span class="new-nav-item wow animated fadeInUp" data-wow-delay="0.4s">Contact Us</span>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-lg">
-					<span class="new-nav-item">Sign Up</span>
+					<span class="new-nav-item wow animated fadeInUp" data-wow-delay="0.5s">Sign Up</span>
 				</div>
 			</div>
 
-			<div class="sub-section case-content">
-				<h3 class="h3">HOMEPAGE USER EXPERIENCE</h3>
-				<p class="big">Based on this new architecture, I restructured the homepage to answer the most common questions about OneGo: what is it, how does it work, where can I fly, who has vouched for it, and why OneGO.</p>
-			</div>
+			{{#parseJSON '{
+					"title": "HOMEPAGE USER EXPERIENCE",
+					"content" : "Based on this new architecture, I restructured the homepage to answer the most common questions about OneGo: what is it, how does it work, where can I fly, who has vouched for it, and why OneGO."
+				}'}}
+					{{>sub-section-header}}
+			{{/parseJSON}}
 
-			<img src="{{imgpath}}/user-experience.jpg" alt="">
 
-			<div class="sub-section case-content">
-				<h3 class="h3">HOMEPAGE DESIGN</h3>
-				<p class="big">In the end, the new homepage is optimistic, focused and approachable for the user. Perfect for busy travellers on the go.</p>
-			</div>
+			<img src="{{imgpath}}/user-experience.jpg" class="wow animated fadeInUpSmall" alt="">
 
-			<img src="{{imgpath}}/homepage-v-7.jpg" alt="">
+			{{#parseJSON '{
+					"title": "HOMEPAGE DESIGN",
+					"content" : "In the end, the new homepage is optimistic, focused and approachable for the user. Perfect for busy travellers on the go."
+				}'}}
+					{{>sub-section-header}}
+			{{/parseJSON}}
+
+			<img src="{{imgpath}}/homepage-v-7.jpg" class="wow animated fadeInUpSmall" alt="">
 		</div>
 	<section>
 		<div class="container">
@@ -111,9 +118,9 @@ bodyClass: "onego"
 			</div>
 
 
-			<img src="{{imgpath}}/pricing-v-5-b.jpg" class="case-img" alt="">
+			<img src="{{imgpath}}/pricing-v-5-b.jpg" class="case-img wow animated fadeInUpSmall" alt="">
 
-			<img src="{{imgpath}}/pricing-v-5-c.jpg" alt="">
+			<img src="{{imgpath}}/pricing-v-5-c.jpg" class="wow animated fadeInUpSmall" alt="">
 		</div>
 	</section>
 	<section class="pad-b-160">
@@ -132,7 +139,7 @@ bodyClass: "onego"
 		</div>
 	</section>
 
-	<section class="next-project">
+	<section class="next-project wow animated fadeIn">
 		<a href="/case-study/medicrea.html">&mdash;Next Project&mdash;</a>
 	</section>
 
