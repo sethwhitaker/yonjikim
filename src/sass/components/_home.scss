@@ -1,5 +1,5 @@
+// Homepage V1
 .home-intro{
-	min-height: 625px;
 	background-color: #B6BAFF;
 	padding:100px 0 200px;
 	p{
@@ -26,6 +26,71 @@
 }
 
 .home-footer{
-	padding:50px 0;
+	padding:50px 0 0px;
 	text-align: center;
+}
+
+//Homepage V2
+body.home{
+	background-color: #9089E5;
+}
+.homepage-animation{
+	background: #9089E5 linear-gradient(#052F5F, #9089E5 100%) 0 0 no-repeat scroll;
+	position: relative;
+	overflow: hidden;
+}
+
+.scroll-animation{
+	max-width: 930px;
+	width: 100%;
+	margin:0 auto;
+}
+.letters{
+  	height: 120px;
+}
+.letter{
+	display: block;
+	position: absolute;
+	color:white;
+	font-size: 120px;
+	line-height: 1;
+	&.y{
+		top:-285px;
+		left:10px;
+	}
+	&.o{
+		top:-130px;
+		left:265px;
+	}
+	&.n{
+		top:-390px;
+		left:370px;
+	}
+	&.j{
+		top:-220px;
+		left:660px;
+	}
+	&.i{
+		top:-80px;
+		left:910px;
+	}
+	&.k{
+		top:140px;
+		left:80px;
+	}
+	&.i2{
+		top:325px;
+		left:365px;
+	}
+	&.m{
+		top:360px;
+		left:770px;
+	}
+}
+.homepage-intro{
+	text-align: center;
+	color:white;
+	p, a{
+		color:white;
+	}
 }

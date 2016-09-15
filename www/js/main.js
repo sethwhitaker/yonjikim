@@ -95,11 +95,95 @@
 			this.$navWork.on('click', $.proxy(this.openNav, this));
 			this.$navMulti.on('click', this.scrollToTop);
 		}
-
-
 	};
 
+	var homepage = function(){
+
+		var flightpath = {
+			y : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: 170,	y: 285}
+					]
+			},
+			o : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: -19,	y: 130}
+					]
+			},
+			n : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: -42,	y: 390}
+					]
+			},
+			j : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: -255, y: 220}
+					]
+			},
+			i : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: -468, y: 80}
+					]
+			},
+			k : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: 440,	y: -140}
+					]
+			},
+			i2 : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: 243,	y: -325}
+					]
+			},
+			m : {
+				curviness: 0,
+				autoRotate: false,
+				values: [
+						{x: -114,	y: -360}
+					]
+			}
+		};
+		// init controller
+		var controller = new ScrollMagic.Controller();
+
+		// create tween
+		var tween = new TimelineMax();
+
+		 tween.to($(".y"), 1, {css:{bezier:flightpath.y}, ease:Power1.easeInOut}, 0)
+				.to($(".o"), 1, {css:{bezier:flightpath.o}, ease:Power1.easeInOut}, 0)
+				.to($(".n"), 1, {css:{bezier:flightpath.n}, ease:Power1.easeInOut}, 0)
+				.to($(".j"), 1, {css:{bezier:flightpath.j}, ease:Power1.easeInOut}, 0)
+				.to($(".i"), 1, {css:{bezier:flightpath.i}, ease:Power1.easeInOut}, 0)
+				.to($(".k"), 1, {css:{bezier:flightpath.k}, ease:Power1.easeInOut}, 0)
+				.to($(".i2"), 1, {css:{bezier:flightpath.i2}, ease:Power1.easeInOut}, 0)
+				.to($(".m"), 1, {css:{bezier:flightpath.m}, ease:Power1.easeInOut}, 0);
+
+
+		// build scene
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1200, triggerHook: 0, offset: -200})
+						.setPin(".letters")
+						.setTween(tween)
+						.addTo(controller);
+	}
+
 	$(document).ready(function(){
+		if($('body').hasClass('home')){
+			homepage();
+		}
 		navigation.init();
 		new WOW().init();
 	});
