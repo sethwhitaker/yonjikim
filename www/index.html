@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="">
+<body class="home">
 <a id="top"></a><!-- Navigation -->
 <nav class="navigation" role="navigation">
 	<span class="nav-home wow animated fadeInLeft" data-wow-delay="0.6s"><a href="/" class="">&mdash;Home&mdash;</a></span>
@@ -64,47 +64,40 @@
 </a>
 
 <main>
-	<section class="homepage-intro">
-		<!-- <section class="wow animated fadeInUpSmall" data-wow-delay="0.25s"> -->
-		<section>
-			<div class="letters">
+	<section class="homepage-animation" id="trigger">
+		<div style="height:200px"></div>
 
-				<div class="h1 letter y">Y</div>
-		<!-- 		<div class="h1 letter o">O</div>
-				<div class="h1 letter n">N</div>
-				<div class="h1 letter j">J</div>
-				<div class="h1 letter i">I</div>
-				<div class="h1 letter k">K</div>
-				<div class="h1 letter i">I</div>
-				<div class="h1 letter m">M</div> -->
+			<div class="scroll-animation">
+				<h1 class="h1 letters">
+					<span class="h1 letter y">Y</span>
+			 		<span class="h1 letter o">o</span>
+					<span class="h1 letter n">n</span>
+					<span class="h1 letter j">j</span>
+					<span class="h1 letter i">i</span>
+					<span class="h1 letter k">K</span>
+					<span class="h1 letter i2">i</span>
+					<span class="h1 letter m">m</span>
+				</h1>
 			</div>
-			<div class="container">
+
+			<div class="container homepage-intro">
 				<div class="row flex-items-sm-around">
 					<div class="col-md-14 col-xl-8">
-
-						<div class="">
-
-
-							<!-- <h1 class="h1 ">Yonji Kim</h1> -->
-							<p class="big">is my name, and i'm an interactive designer based in New York City. Formerly a producer and strategist, I now focus on creating web &amp; mobile experiences.</p>
-
-							<div class="row flex-items-sm-around push-80">
-								<div class="col-sm-5">
-									<h3 class="h3">Specialties</h3>
-									<p>UX, Interaction Design, Prototyping</p>
-								</div>
-								<div class="col-sm-5">
-									<h3 class="h3">Get In Touch</h3>
-									<p><a href="mailto:heyyonji@gmail.com">heyyonji@gmail.com</a></p>
-								</div>
+						<p class="big">is my name, and i'm an interactive designer based in New York City. Formerly a producer and strategist, I now focus on creating web &amp; mobile experiences.</p>
+						<div class="row flex-items-sm-around push-80">
+							<div class="col-sm-5">
+								<h3 class="h3">Specialties</h3>
+								<p>UX, Interaction Design, Prototyping</p>
+							</div>
+							<div class="col-sm-5">
+								<h3 class="h3">Get In Touch</h3>
+								<p><a href="mailto:heyyonji@gmail.com">heyyonji@gmail.com</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 
 			</div>
-
-		</section>
 
 	</section>
 
@@ -129,6 +122,17 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
+  <!-- GreenSock Animation-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+
+  <!-- ScrollMagic and GASP Plugin -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="/js/vendor/scrollmagic-indicators.js"></script>
+  <script src="/js/vendor/gasp.js"></script>
 
  <!--
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
@@ -138,8 +142,8 @@
   <script src="/js/vendor/WOW/dist/wow.min.js"></script>
   <script src="/js/vendor/fullpage-js/jquery.fullPage.min.js"></script>
 
-  <script src="/js/main.js"></script>
 
+  <script src="/js/main.js"></script>
 
 </body>
 
