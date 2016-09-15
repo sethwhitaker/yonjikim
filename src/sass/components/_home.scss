@@ -1,5 +1,5 @@
+// Homepage V1
 .home-intro{
-	min-height: 625px;
 	background-color: #B6BAFF;
 	padding:100px 0 200px;
 	p{
@@ -28,4 +28,23 @@
 .home-footer{
 	padding:50px 0;
 	text-align: center;
+}
+
+//Homepage V2
+.homepage-intro{
+	background-image: linear-gradient(#052F5F, #9089E5 100%);
+}
+.letters{
+	width: 100%;
+	max-width: 1200px;
+  	height: 1200px;
+  	overflow: hidden;
+  	position: relative;
+  	margin:0px auto;
+}
+.letter{
+	display: block;
+	position: absolute;
+	color:white;
+	font-size: 120px;
 }
