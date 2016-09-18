@@ -973,6 +973,7 @@ body.home {
 .homepage-intro {
   text-align: center;
   color: white;
+  margin-top: 25px;
 }
 
 .homepage-intro p, .homepage-intro a {
