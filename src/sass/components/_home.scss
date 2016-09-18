@@ -36,8 +36,12 @@
 
 //Homepage V2
 body.home{
+	background: #9089E5;
+}
+.homepage-gradient{
 	background: #9089E5 linear-gradient(#052F5F, #9089E5 100%) 0 0 no-repeat scroll;
 }
+
 .homepage-animation{
 	background: transparent url(/img/confetti.png) center top repeat-x scroll;
 	position: relative;
@@ -103,7 +107,7 @@ body.home{
 
 .homepage-projects{
 	background: transparent url(/img/confetti-bottom.png) center bottom repeat-x scroll;
-	padding:100px 0;
+	padding:100px 0 230px;
 }
 .proj{
 	position: relative;
