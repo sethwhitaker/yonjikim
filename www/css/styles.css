@@ -912,6 +912,7 @@ body.home {
 }
 
 .scroll-animation {
+  min-height: 1050px;
   max-width: 930px;
   width: 100%;
   margin: 0 auto;
