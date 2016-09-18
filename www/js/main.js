@@ -1,5 +1,6 @@
 (function($) {
 	'use strict';
+	new WOW().init();
 
 	var navigation = {
 
@@ -185,7 +186,6 @@
 			homepage();
 		}
 		navigation.init();
-		new WOW().init();
 	});
 
 
