@@ -112,49 +112,49 @@
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: -19,	y: 130}
+						{x: -10,	y: 130}
 					]
 			},
 			n : {
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: -42,	y: 390}
+						{x: -43,	y: 390}
 					]
 			},
 			j : {
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: -255, y: 220}
+						{x: -256, y: 220}
 					]
 			},
 			i : {
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: -468, y: 80}
+						{x: -469, y: 80}
 					]
 			},
 			k : {
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: 440,	y: -140}
+						{x: 439,	y: -140}
 					]
 			},
 			i2 : {
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: 243,	y: -325}
+						{x: 242,	y: -325}
 					]
 			},
 			m : {
 				curviness: 0,
 				autoRotate: false,
 				values: [
-						{x: -114,	y: -360}
+						{x: -125,	y: -360}
 					]
 			}
 		};
