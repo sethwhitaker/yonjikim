@@ -26,16 +26,20 @@
 }
 
 .home-footer{
-	padding:50px 0 0px;
-	text-align: center;
+	padding:40px 0 35px;
+	p{
+		text-align: center;
+		font-family: $heading-font;
+		margin:0;
+	}
 }
 
 //Homepage V2
 body.home{
-	background-color: #9089E5;
+	background: #9089E5 linear-gradient(#052F5F, #9089E5 100%) 0 0 no-repeat scroll;
 }
 .homepage-animation{
-	background: #9089E5 linear-gradient(#052F5F, #9089E5 100%) 0 0 no-repeat scroll;
+	background: transparent url(/img/confetti.png) center top repeat-x scroll;
 	position: relative;
 	overflow: hidden;
 }
@@ -91,6 +95,20 @@ body.home{
 	text-align: center;
 	color:white;
 	p, a{
+		color:white;
+	}
+}
+
+.homepage-projects{
+	background: transparent url(/img/confetti-bottom.png) center bottom repeat-x scroll;
+	padding:100px 0;
+}
+
+.homepage-contact{
+	background-color: #633BB8;
+	padding:100px 0;
+	color:white;
+	a{
 		color:white;
 	}
 }

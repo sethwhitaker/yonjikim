@@ -13,7 +13,6 @@
 body,
 html {
   width: 100%;
-  height: 100%;
   font-family: "niveau-grotesk";
   color: #1d1d1b;
   font-weight: 300;
@@ -62,6 +61,14 @@ cite {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .lead {
@@ -885,16 +892,21 @@ cite {
 }
 
 .home-footer {
-  padding: 50px 0 0px;
+  padding: 40px 0 35px;
+}
+
+.home-footer p {
   text-align: center;
+  font-family: "fortescue-pro";
+  margin: 0;
 }
 
 body.home {
-  background-color: #9089E5;
+  background: #9089E5 linear-gradient(#052F5F, #9089E5 100%) 0 0 no-repeat scroll;
 }
 
 .homepage-animation {
-  background: #9089E5 linear-gradient(#052F5F, #9089E5 100%) 0 0 no-repeat scroll;
+  background: transparent url(/img/confetti.png) center top repeat-x scroll;
   position: relative;
   overflow: hidden;
 }
@@ -963,6 +975,21 @@ body.home {
 }
 
 .homepage-intro p, .homepage-intro a {
+  color: white;
+}
+
+.homepage-projects {
+  background: transparent url(/img/confetti-bottom.png) center bottom repeat-x scroll;
+  padding: 100px 0;
+}
+
+.homepage-contact {
+  background-color: #633BB8;
+  padding: 100px 0;
+  color: white;
+}
+
+.homepage-contact a {
   color: white;
 }
 

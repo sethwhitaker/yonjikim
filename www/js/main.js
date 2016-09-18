@@ -174,7 +174,7 @@
 
 
 		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1200, triggerHook: 0, offset: -200})
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1050, triggerHook: 0, offset: -200})
 						.setPin(".letters")
 						.setTween(tween)
 						.addTo(controller);
@@ -190,3 +190,4 @@
 
 
 })(jQuery);
+
