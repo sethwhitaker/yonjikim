@@ -762,7 +762,7 @@ cite {
 
 .nav-multi-button .line.line2 {
   transform: rotate(-45deg);
-  left: 75%;
+  left: 72%;
 }
 
 .nav-multi-button.active {
@@ -1013,7 +1013,7 @@ body.home {
 }
 
 .sub-section {
-  padding: 100px 0;
+  padding: 100px 0 70px;
   text-align: center;
 }
 
