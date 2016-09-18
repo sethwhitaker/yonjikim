@@ -985,6 +985,48 @@ body.home {
   padding: 100px 0;
 }
 
+.proj {
+  position: relative;
+  display: inline-block;
+}
+
+.proj img {
+  transition: opacity 0.35s ease;
+}
+
+.proj:hover {
+  -webkit-box-shadow: inset 0px 0px 0px 3px #fff;
+  -moz-box-shadow: inset 0px 0px 0px 3px #fff;
+  box-shadow: inset 0px 0px 0px 3px #fff;
+}
+
+.proj:hover img {
+  opacity: 0;
+}
+
+.proj:hover .proj-title {
+  color: white;
+}
+
+.proj-title {
+  transition: color 0.35s ease;
+  font-family: "fortescue-pro";
+  letter-spacing: 2px;
+  text-align: left;
+  font-size: 30px;
+  color: black;
+  padding: 20px 35px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.proj-type {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+}
+
 .homepage-contact {
   background-color: #633BB8;
   padding: 100px 0;
