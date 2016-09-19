@@ -136,12 +136,11 @@ body.home{
 .proj-right{
 	text-align:center;
 }
-
-@media screen and (min-width: 600px){
+@media screen and (min-width: 544px){
 	.proj-left{
 		text-align:right;
 	}
-	.proj-left{
+	.proj-right{
 		text-align:left;
 	}
 }
