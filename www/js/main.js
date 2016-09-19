@@ -1,6 +1,9 @@
 (function($) {
 	'use strict';
-	new WOW().init();
+	new WOW({
+		offset: 50,
+		mobile: true
+	}).init();
 
 	var navigation = {
 
