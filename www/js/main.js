@@ -34,7 +34,6 @@
 				controlArrows: true,
 				sectionsColor : ['#143658', '#ffc529'],
 				afterRender: function(){
-					console.log("after render");
 					_this.$nav.toggleClass('active');
 					_this.$navMulti.toggleClass('active');
 					_this.$navOverlay.toggleClass('show');
