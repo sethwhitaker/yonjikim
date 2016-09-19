@@ -1,40 +1,5 @@
-// Homepage V1
-.home-intro{
-	background-color: #B6BAFF;
-	padding:100px 0 200px;
-	p{
-		color:white;
-		span{
-			color:black;
-		}
-	}
-	h3{
-		color:white;
-	}
-	a{
-		color:black;
-	}
-}
-.home-intro-copy{
-	max-width: 625px;
-}
+// Homepage
 
-
-.home-projects{
-	padding:160px 0;
-	background-color: #E4FAF6;
-}
-
-.home-footer{
-	padding:40px 0 35px;
-	p{
-		text-align: center;
-		font-family: $heading-font;
-		margin:0;
-	}
-}
-
-//Homepage V2
 body.home{
 	background: #9089E5;
 }
@@ -186,5 +151,15 @@ body.home{
 	color:white;
 	a{
 		color:white;
+	}
+}
+
+
+.homepage-footer{
+	padding:40px 0 35px;
+	p{
+		text-align: center;
+		font-family: $heading-font;
+		margin:0;
 	}
 }

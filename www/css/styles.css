@@ -866,46 +866,6 @@ cite {
   background: #fff;
 }
 
-.home-intro {
-  background-color: #B6BAFF;
-  padding: 100px 0 200px;
-}
-
-.home-intro p {
-  color: white;
-}
-
-.home-intro p span {
-  color: black;
-}
-
-.home-intro h3 {
-  color: white;
-}
-
-.home-intro a {
-  color: black;
-}
-
-.home-intro-copy {
-  max-width: 625px;
-}
-
-.home-projects {
-  padding: 160px 0;
-  background-color: #E4FAF6;
-}
-
-.home-footer {
-  padding: 40px 0 35px;
-}
-
-.home-footer p {
-  text-align: center;
-  font-family: "fortescue-pro";
-  margin: 0;
-}
-
 body.home {
   background: #9089E5;
 }
@@ -1098,6 +1058,16 @@ body.home {
 
 .homepage-contact a {
   color: white;
+}
+
+.homepage-footer {
+  padding: 40px 0 35px;
+}
+
+.homepage-footer p {
+  text-align: center;
+  font-family: "fortescue-pro";
+  margin: 0;
 }
 
 /* Case Study General */
