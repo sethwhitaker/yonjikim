@@ -47,15 +47,36 @@ body.home{
 	position: relative;
 	overflow: hidden;
 }
-
+.animation-spacer{
+	height:200px;
+  	@media screen and (max-width:940px){
+		height:100px;
+  	}
+  	@media screen and (max-width:675px){
+		height:0px;
+  	}
+}
 .scroll-animation{
 	min-height: 1050px;
 	max-width: 930px;
 	width: 100%;
 	margin:0 auto;
+  	@media screen and (max-width:940px){
+		max-width: 675px;
+  	}
+  	@media screen and (max-width:675px){
+		max-width: 320px;
+  	}
 }
 .letters{
   	height: 120px;
+  	@media screen and (max-width:940px){
+  		transform: scale(0.66) translateX(-130px);
+  	}
+  	@media screen and (max-width:675px){
+  		transform: scale(0.33) translateX(-310px);
+
+  	}
 }
 .letter{
 	display: block;
