@@ -1076,6 +1076,20 @@ body.home {
   display: block;
 }
 
+.proj-left,
+.proj-right {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .proj-left {
+    text-align: right;
+  }
+  .proj-left {
+    text-align: left;
+  }
+}
+
 .homepage-contact {
   background-color: #633BB8;
   padding: 100px 0;
