@@ -20,18 +20,18 @@
 		}
 		display: inline-block;
 	}
-	span{
+	.nav-home,
+	.nav-work{
 		position: fixed;
 		display: inline-block;
 		transition: all 0.3s ease;
-	}
-
-	.nav-home,
-	.nav-work{
 		top:300px;
 	}
 	.nav-home{
 		left:0;
+		&.off-screen{
+			transform:translateX(-100%);
+		}
 		a{
 			transform: rotate(-90deg);
 		}
@@ -39,6 +39,9 @@
 
 	.nav-work{
 		right:0;
+		&.off-screen{
+			transform:translateX(100%);
+		}
 		a{
 			transform: rotate(90deg);
 			transition: all 0.3s ease;

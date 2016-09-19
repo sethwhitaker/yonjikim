@@ -9,13 +9,38 @@
 
 
 		init: function(){
+			var _this = this;
 			this.isOpen = false;
 			this.$nav = $('.navigation');
+			this.$navLinks = this.$nav.find('span');
 			this.$navWork = this.$nav.find('.nav-work');
 			this.$navMulti = $('.js-nav-multi-button');
 			this.$navOverlay = $('.navigation-overlay');
 			this.$navFull = $("#fullpage");
+ 			this.position = $(window).scrollTop();
+			setTimeout(function(){
+				_this.showLinks();
+			},1000);
 			this.addEventHandlers();
+			$(window).on('scroll', $.proxy(this.windowScroll, this));
+
+		},
+		showLinks : function(){
+			this.$navLinks.removeClass('off-screen');
+		},
+		windowScroll: function(event){
+		  	var $window =  $(window);
+		  	var scroll = $window.scrollTop();
+
+        	if (scroll < this.position ) { 	//scroll up
+		   	this.$navLinks.removeClass('off-screen');
+		  	} else {  	//scroll down
+		   	if(scroll >= $window.height()){
+		   		this.$navLinks.addClass('off-screen');
+		   	}
+		  	}
+		  	this.position = scroll;
+
 		},
 		openNav: function(e){
 			e.preventDefault();

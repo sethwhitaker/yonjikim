@@ -696,19 +696,20 @@ cite {
   color: #c3c3c3;
 }
 
-.navigation span {
+.navigation .nav-home,
+.navigation .nav-work {
   position: fixed;
   display: inline-block;
   transition: all 0.3s ease;
-}
-
-.navigation .nav-home,
-.navigation .nav-work {
   top: 300px;
 }
 
 .navigation .nav-home {
   left: 0;
+}
+
+.navigation .nav-home.off-screen {
+  transform: translateX(-100%);
 }
 
 .navigation .nav-home a {
@@ -717,6 +718,10 @@ cite {
 
 .navigation .nav-work {
   right: 0;
+}
+
+.navigation .nav-work.off-screen {
+  transform: translateX(100%);
 }
 
 .navigation .nav-work a {
