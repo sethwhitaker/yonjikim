@@ -7,7 +7,7 @@ bodyClass: "medicrea"
 
 <main class="animated fadeIn">
 
-	<section class="wow animated fadeInUpSmall" data-wow-delay="0.25s">
+	<section class="wow animated fadeInUpSmall nav-links-padding" data-wow-delay="0.25s">
 
 		<div class="container">
 			<div class="row flex-items-sm-around">
@@ -32,13 +32,9 @@ bodyClass: "medicrea"
 
 			<img class="push-150" src="{{imgpath}}/medicrea-1-b.png" alt="">
 		</div>
-
 	</section>
 
-
-
-
-	<section class="pull-120 pad-b-130 blue">
+	<section class="pull-120 pad-b-130 blue nav-links-padding">
 
 		<div class="container">
 			<div class="case-content">
@@ -91,11 +87,9 @@ bodyClass: "medicrea"
 
 			<img class="wow animated fadeIn" src="{{imgpath}}/userflow.jpg" alt="">
 		</div>
-
-
 	</section>
 
-	<section>
+	<section class="nav-links-padding">
 		<div class="container">
 			<div class="case-content">
 				{{#parseJSON '{
@@ -108,7 +102,7 @@ bodyClass: "medicrea"
 			</div>
 			<div class="medicrea-branding">
 				<div class="row flex-items-md-center">
-					<div class="col-md-7">
+					<div class="col-md-7 pad-r-40">
 						<h3 class="h3 wow animated fadeIn">MEDICREA EMBODIES</h3>
 						<img src="{{imgpath}}/medicrea-embodies.jpg" class="shove-80 wow animated fadeInLeftSmall" alt="">
 						<h3 class="h3 wow animated fadeIn">FRIENDLY TYPEFACE</h3>
@@ -138,21 +132,24 @@ bodyClass: "medicrea"
 	</section>
 
 	<section>
-		<div class="container">
-			<div class="case-content">
-				{{#parseJSON '{
-					"number": 3,
-					"title": "Design Phase",
-					"content" : "Next, the new branding and user-centric strategy had to be applied to every page, which mean this next phase took the longest. On each page, I designed for each user, refining all actions to allow them to successfully meet their goals."
-				}'}}
-					{{>case-section-header}}
-				{{/parseJSON}}
+
+		<div class="nav-links-padding">
+			<div class="container">
+				<div class="case-content">
+					{{#parseJSON '{
+						"number": 3,
+						"title": "Design Phase",
+						"content" : "Next, the new branding and user-centric strategy had to be applied to every page, which mean this next phase took the longest. On each page, I designed for each user, refining all actions to allow them to successfully meet their goals."
+					}'}}
+						{{>case-section-header}}
+					{{/parseJSON}}
+				</div>
+				<img class="wow animated fadeInUpSmall" src="{{imgpath}}/group-9.png" alt="">
 			</div>
-			<img class="wow animated fadeInUpSmall" src="{{imgpath}}/group-9.png" alt="">
 		</div>
 
 
-		<div class="pull-140 pad-b-130 blue">
+		<div class="pull-140 pad-b-130 blue nav-links-padding">
 
 			<div class="container">
 
@@ -216,7 +213,7 @@ bodyClass: "medicrea"
 		</div>
 	</section>
 
-	<section>
+	<section class="nav-links-padding">
 		<div class="container">
 			<div class="case-content">
 				{{#parseJSON '{
