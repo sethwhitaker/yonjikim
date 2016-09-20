@@ -184,8 +184,12 @@
 /* ONEGO */
 
 .onego {
-	.profile-img img{
-		margin:0 20px;
+	.profile-img [class^="col-"]{
+		text-align: center;
+		margin:15px 0;
+		@media screen and(min-width: 768px){
+			margin:0px;
+		}
 	}
 
 	.new-nav-item{
