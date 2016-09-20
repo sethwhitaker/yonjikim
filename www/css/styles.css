@@ -679,7 +679,7 @@ cite {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px;
+  padding: 15px 15px 10px 40px;
   border-bottom: 1px solid #efefef;
   z-index: 2;
 }
@@ -688,7 +688,7 @@ cite {
   font-family: "fortescue-pro";
   font-size: 14px;
   text-transform: uppercase;
-  color: black;
+  color: #555;
   letter-spacing: 15px;
   transition: color 0.3s ease;
   display: inline-block;
@@ -710,9 +710,16 @@ cite {
   right: 15px;
 }
 
+.navigation .home-icon {
+  display: block;
+  width: 45px;
+  height: 34px;
+  background: transparent url(/img/home-icon.png) 0 0 no-repeat scroll;
+}
+
 .navigation.active {
   z-index: 2;
-  border-bottom: none;
+  border-bottom-color: transparent;
 }
 
 .navigation.active .nav-work {
@@ -839,6 +846,17 @@ cite {
 
 .nav-multi-button.active .line.line2 {
   left: 25%;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-multi-button {
+    top: 85%;
+    right: 15px;
+  }
+  .nav-multi-button.active {
+    right: 0px;
+    top: 15px;
+  }
 }
 
 .navigation-overlay {
