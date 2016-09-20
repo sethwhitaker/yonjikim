@@ -136,23 +136,39 @@
 
 /* Design */
 .color-palette{
-	border-left:1px solid $grey-two;
+	margin-top: 60px;
+	@media screen and (min-width: 768px){
+		> h3{
+			text-align:center
+		}
+		margin-top: 0px;
+		border-left:1px solid $grey-two;
+	}
 }
 
 .palette{
 	display: block;
-	width:65px;
-	height:65px;
-	border-radius: 65px;
+	width:52px;
+	height:52px;
+	border-radius: 52px;
 	text-align:center;
 	margin:0 auto;
+	@media screen and (min-width: 768px){
+		width:65px;
+		height:65px;
+		border-radius: 65px;
+	}
 }
 
 .palette-label{
 	color: $grey-seven;
 	text-align:center;
-	margin-bottom:60px;
 	margin-top:20px;
+	font-size: 12px;
+	@media screen and (min-width: 768px){
+		margin-bottom:60px;
+		font-size: 16px;
+	}
 }
 
 

@@ -73,8 +73,11 @@ ul{
 
 .big {
 	font-family: $heading-font;
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 1.5;
+	@media screen and(min-width: 768px){
+		font-size: 30px;
+	}
 }
 
 
