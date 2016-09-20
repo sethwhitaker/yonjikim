@@ -104,19 +104,16 @@
 				transform:translateX(45px);
 			}
 		}
-		@media screen and (max-width:767px){
-
-		}
 	}
 }
 .nav-links-padding{
-	@media screen and (min-width:992px){
-		padding-left: 90px;
-		padding-right: 90px;
-	}
 	@media screen and (min-width:768px){
 		padding-left:45px;
 		padding-right:45px;
+	}
+	@media screen and (min-width:992px){
+		padding-left: 90px;
+		padding-right: 90px;
 	}
 }
 .nav-multi-button{

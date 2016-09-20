@@ -788,17 +788,17 @@ cite {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .nav-links-padding {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .nav-links-padding {
     padding-left: 45px;
     padding-right: 45px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-links-padding {
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
