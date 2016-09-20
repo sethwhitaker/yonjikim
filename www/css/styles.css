@@ -1600,6 +1600,7 @@ cite {
 .navigation .nav-work {
   position: absolute;
   right: 15px;
+  transition-delay: 0.3s;
 }
 
 .navigation .home-icon {
@@ -1615,10 +1616,8 @@ cite {
 }
 
 .navigation.active .nav-work {
-  top: 180px;
-  right: 0;
-  width: 100%;
-  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .navigation.active .nav-work a {
@@ -1649,6 +1648,7 @@ cite {
   }
   .navigation .nav-work {
     right: 0;
+    transition-delay: 0s;
   }
   .navigation .nav-work.off-screen {
     transform: translateX(100%);
@@ -1658,12 +1658,10 @@ cite {
     transition: all 0.3s ease;
   }
   .navigation.active .nav-work {
-    top: 80px;
-    right: 50%;
-    width: auto;
+    top: 30px;
   }
   .navigation.active .nav-work a {
-    transform: rotate(0deg) translateX(50%);
+    transform: rotate(0deg);
     color: white;
   }
   .navigation.active .nav-home {
@@ -1729,7 +1727,7 @@ cite {
 }
 
 .nav-multi-button.active {
-  top: 10%;
+  top: 30px;
 }
 
 .nav-multi-button.active .line {
