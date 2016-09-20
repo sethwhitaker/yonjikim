@@ -79,18 +79,46 @@
 
 /* Research Block */
 
-.research-block .case-content{
-	background-color: $light-blue;
-	position: relative;
-	z-index: 1;
-	padding: 55px 25px 150px 55px;
-	max-width: 705px;
-	margin: -240px auto 0;
+.research-block {
+	margin-bottom: 60px;
+	@media screen and (min-width:768px){
+		margin-bottom: auto;
+		.case-content{
+			background-color: $light-blue;
+			position: relative;
+			z-index: 1;
+			padding: 30px 30px 60px 30px;
+			max-width: 90%;
+			margin: -150px auto 0;
+		}
+	}
+	@media screen and (min-width:992px){
+		.case-content{
+			padding: 55px 25px 150px 55px;
+			margin: -200px auto 0;
+			max-width: 705px;
+		}
+
+	}
 
 }
 .research-block-content{
-	overflow: hidden;
-	padding: 0 30px;
+	clear:both;
+	margin:20px;
+	@media screen and (min-width:768px){
+		overflow: hidden;
+		padding: 0 30px;
+		clear: none;
+    	margin: 0;
+	}
+}
+.research-portrait{
+	margin: 0 20px;
+	@media screen and (min-width:768px){
+		float:left;
+		margin:0;
+	}
+
 }
 .research-block-sub-content{
 	color:$black-one;
