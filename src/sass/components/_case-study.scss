@@ -19,8 +19,11 @@
 
 
 .case-intro{
-	padding-top:215px;
+	padding-top:130px;
 	text-align:center;
+	@media screen and (min-width:768px){
+		padding-top:215px;
+	}
 }
 
 .case-content{
