@@ -61,7 +61,7 @@
 		padding:140px 0;
 		font-family: $heading-font;
 		font-size: 14px;
-		letter-spacing: 15px;
+		letter-spacing: 10px;
 		color: $black-one;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -74,6 +74,11 @@
 	}
 	.onego & {
 		background-color: $onego-color;
+	}
+	@media screen and (min-width: 544px){
+		a{
+			letter-spacing: 15px;
+		}
 	}
 }
 
