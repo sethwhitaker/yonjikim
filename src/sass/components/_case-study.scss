@@ -122,7 +122,7 @@
 }
 .research-block-sub-content{
 	color:$black-one;
-	margin: 50px  70px 0 0;
+	margin: 50px  0px 0 0;
 	padding-top: 50px;
 	border-top: 1px solid $grey-seven;
 	p{
@@ -131,6 +131,9 @@
 	ul{
 		list-style-type: circle;
 		padding-left: 20px;
+	}
+	@media screen and (min-width:768px){
+		margin: 50px  70px 0 0;
 	}
 }
 
