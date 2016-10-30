@@ -4173,6 +4173,10 @@ cite {
   background-color: #ffc529;
 }
 
+.navigation-overlay .section.airbnb {
+  background-color: #00d1c1;
+}
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: #fff;
 }
@@ -4464,6 +4468,10 @@ body.home {
 
 .onego .next-project {
   background-color: #ffc529;
+}
+
+.airbnb .next-project {
+  background-color: #00d1c1;
 }
 
 @media screen and (min-width: 544px) {
